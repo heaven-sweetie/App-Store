@@ -15,12 +15,10 @@ struct AppEntryListCellData {
     var title: String
 }
 
-class AppEntryListCell: UITableViewCell {
+class AppEntryListCell: UITableViewCell, Identifiable {
     @IBOutlet weak var rankingLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    
-    public static var identifier: String { return String(describing: self) }
     
     func configure(by cellData: AppEntryListCellData) {
         rankingLabel.text = "\(cellData.ranking)"

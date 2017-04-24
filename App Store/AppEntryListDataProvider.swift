@@ -11,6 +11,8 @@ import UIKit
 protocol AppEntryListDataProviderSource {
     var numberOfRows: Int { get }
     
+    func appEntry(at index: Int) -> Entry?
+    
     func title(at index: Int) -> String
     func iconURL(at index: Int) -> URL?
 }
@@ -24,6 +26,12 @@ class AppEntryListDataProvider: NSObject, UITableViewDataSource, UITableViewDele
             
             tableView.reloadData()
         }
+    }
+    
+    var selectedAppEntry: Entry? {
+        guard let feed = feed, let indexPath = tableView?.indexPathForSelectedRow else { return nil }
+        
+        return feed.appEntry(at: indexPath.row)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

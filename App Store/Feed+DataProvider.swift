@@ -13,7 +13,7 @@ extension Feed: AppEntryListDataProviderSource {
         return entry.count
     }
     
-    private func appEntry(at index: Int) -> Entry? {
+    func appEntry(at index: Int) -> Entry? {
         return entry[index]
     }
     

@@ -23,4 +23,21 @@ struct API {
                 completion(feed)
         }
     }
+    
+    func requestAppDetail(by appId: String, completion: @escaping ClosureType<AppDetail>) {
+        let urlParams = ["id": appId, "country": "kr"]
+        Alamofire.request("https://itunes.apple.com/lookup", method: .get, parameters: urlParams)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                guard let resultValue = response.result.value,
+                    let resultDictionary = resultValue as? [String: Any],
+                    let results = resultDictionary["results"],
+                    let resultArray = results as? [[String: Any]],
+                    let appDetailDictionary = resultArray.first as NSDictionary?,
+                    let appDetail = AppDetail.from(appDetailDictionary) else { return }
+                
+                completion(appDetail)
+
+        }
+    }
 }

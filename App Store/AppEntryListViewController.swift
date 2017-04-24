@@ -18,7 +18,7 @@ class AppEntryListViewController: UIViewController {
         super.viewDidLoad()
         
         configureDataProvider()
-        api.requestTopFreeApps { self.dataProvider.feed = $0 }
+        loadFeed()
     }
     
     func configureDataProvider() {
@@ -27,5 +27,17 @@ class AppEntryListViewController: UIViewController {
         
         tableView.dataSource = dataProvider
         tableView.delegate = dataProvider
+    }
+    
+    func loadFeed() {
+        api.requestTopFreeApps { self.dataProvider.feed = $0 }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "AppDetailSegue",
+            let detailViewController = segue.destination as? AppDetailViewController,
+            let selectedAppEntry = dataProvider.selectedAppEntry else { return }
+        
+        detailViewController.appEntry = selectedAppEntry
     }
 }

@@ -13,6 +13,13 @@
 		57194BF91EAD8E9B00BE9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57194BF81EAD8E9B00BE9836 /* Assets.xcassets */; };
 		57194BFC1EAD8E9B00BE9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57194BFA1EAD8E9B00BE9836 /* LaunchScreen.storyboard */; };
 		578605831EAD8F58004EF6F8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 578605821EAD8F58004EF6F8 /* .swiftlint.yml */; };
+		5786058B1EAD8FBE004EF6F8 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605851EAD8FBE004EF6F8 /* Author.swift */; };
+		5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */; };
+		5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */; };
+		5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605881EAD8FBE004EF6F8 /* Entry.swift */; };
+		5786058F1EAD8FBE004EF6F8 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605891EAD8FBE004EF6F8 /* Feed.swift */; };
+		578605901EAD8FBE004EF6F8 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786058A1EAD8FBE004EF6F8 /* Object.swift */; };
+		578605931EAD9068004EF6F8 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578605921EAD9068004EF6F8 /* Mapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		57194BFB1EAD8E9B00BE9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57194BFD1EAD8E9B00BE9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		578605821EAD8F58004EF6F8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		578605851EAD8FBE004EF6F8 /* Author.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
+		578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Mapper.swift"; sourceTree = "<group>"; };
+		578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Mapper.swift"; sourceTree = "<group>"; };
+		578605881EAD8FBE004EF6F8 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		578605891EAD8FBE004EF6F8 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		5786058A1EAD8FBE004EF6F8 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		578605921EAD9068004EF6F8 /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578605931EAD9068004EF6F8 /* Mapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				57194BF01EAD8E9B00BE9836 /* App Store */,
+				578605911EAD8FC3004EF6F8 /* Frameworks */,
 				57194BEF1EAD8E9B00BE9836 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +72,7 @@
 		57194BF01EAD8E9B00BE9836 /* App Store */ = {
 			isa = PBXGroup;
 			children = (
+				578605841EAD8FB0004EF6F8 /* Model */,
 				57194C031EAD8EA100BE9836 /* App Delegate */,
 				5786057D1EAD8EB4004EF6F8 /* View Controllers */,
 				578605801EAD8EBF004EF6F8 /* Storyboards */,
@@ -107,6 +124,28 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		578605841EAD8FB0004EF6F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				578605851EAD8FBE004EF6F8 /* Author.swift */,
+				578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */,
+				578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */,
+				578605881EAD8FBE004EF6F8 /* Entry.swift */,
+				578605891EAD8FBE004EF6F8 /* Feed.swift */,
+				5786058A1EAD8FBE004EF6F8 /* Object.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		578605911EAD8FC3004EF6F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578605921EAD9068004EF6F8 /* Mapper.framework */,
+			);
+			name = Frameworks;
+			path = "App Store";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +157,7 @@
 				57194BEB1EAD8E9B00BE9836 /* Frameworks */,
 				57194BEC1EAD8E9B00BE9836 /* Resources */,
 				578605811EAD8F47004EF6F8 /* Swiftlint Script */,
+				578605941EAD9075004EF6F8 /* Carthage Script */,
 			);
 			buildRules = (
 			);
@@ -191,6 +231,21 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 		};
+		578605941EAD9075004EF6F8 /* Carthage Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/build/IOS/Mapper.framework",
+			);
+			name = "Carthage Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,7 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */,
+				5786058B1EAD8FBE004EF6F8 /* Author.swift in Sources */,
+				5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */,
+				5786058F1EAD8FBE004EF6F8 /* Feed.swift in Sources */,
 				57194BF41EAD8E9B00BE9836 /* ViewController.swift in Sources */,
+				5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */,
+				578605901EAD8FBE004EF6F8 /* Object.swift in Sources */,
 				57194BF21EAD8E9B00BE9836 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +383,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "App Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.heaven-sweetie.App-Store";
@@ -334,6 +399,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "App Store/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.github.heaven-sweetie.App-Store";

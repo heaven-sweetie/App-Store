@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--App List View Controller-->
+        <!--금융 카테고리 무료 앱 스토어-->
         <scene sceneID="MDZ-0b-V8E">
             <objects>
-                <viewController id="0wa-ER-xnT" customClass="AppListViewController" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0wa-ER-xnT" customClass="AppEntryListViewController" customModule="App_Store" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z3q-VZ-gCr"/>
                         <viewControllerLayoutGuide type="bottom" id="Gik-1w-XTa"/>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppEntryCell" id="Mkb-Od-XQO" userLabel="App Entry Cell" customClass="AppEntryCell" customModule="App_Store" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AppEntryListCell" id="Mkb-Od-XQO" userLabel="App Entry Cell" customClass="AppEntryListCell" customModule="App_Store" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="83"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mkb-Od-XQO" id="Rzp-SK-d40">
@@ -80,7 +80,7 @@
                             <constraint firstItem="KfS-hJ-Z4g" firstAttribute="leading" secondItem="gTo-pr-cL6" secondAttribute="leading" id="qbV-qX-gBv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="JFP-gf-jWo"/>
+                    <navigationItem key="navigationItem" title="금융 카테고리 무료 앱 스토어" id="JFP-gf-jWo"/>
                     <connections>
                         <outlet property="tableView" destination="KfS-hJ-Z4g" id="bMh-uf-Onm"/>
                     </connections>

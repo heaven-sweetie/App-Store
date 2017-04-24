@@ -8,11 +8,11 @@
 
 import UIKit
 
-class AppListViewController: UIViewController {
+class AppEntryListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let api = API()
-    var dataProvider: AppEntryDataProvider!
+    var dataProvider: AppEntryListDataProvider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,10 @@ class AppListViewController: UIViewController {
     }
     
     func configureDataProvider() {
-        dataProvider = AppEntryDataProvider()
+        dataProvider = AppEntryListDataProvider()
         dataProvider.tableView = tableView
         
         tableView.dataSource = dataProvider
+        tableView.delegate = dataProvider
     }
 }

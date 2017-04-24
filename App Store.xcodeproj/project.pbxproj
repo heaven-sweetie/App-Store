@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		57194BF21EAD8E9B00BE9836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57194BF11EAD8E9B00BE9836 /* AppDelegate.swift */; };
-		57194BF41EAD8E9B00BE9836 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57194BF31EAD8E9B00BE9836 /* AppListViewController.swift */; };
+		57194BF41EAD8E9B00BE9836 /* AppEntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57194BF31EAD8E9B00BE9836 /* AppEntryListViewController.swift */; };
 		57194BF71EAD8E9B00BE9836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57194BF51EAD8E9B00BE9836 /* Main.storyboard */; };
 		57194BF91EAD8E9B00BE9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57194BF81EAD8E9B00BE9836 /* Assets.xcassets */; };
 		57194BFC1EAD8E9B00BE9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57194BFA1EAD8E9B00BE9836 /* LaunchScreen.storyboard */; };
-		577871691EAD97F80075E68A /* AppEntryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577871681EAD97F80075E68A /* AppEntryCell.swift */; };
+		577871691EAD97F80075E68A /* AppEntryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577871681EAD97F80075E68A /* AppEntryListCell.swift */; };
 		5778716B1EAD98170075E68A /* Feed+DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778716A1EAD98170075E68A /* Feed+DataProvider.swift */; };
 		5778716D1EAD9B240075E68A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5778716C1EAD9B240075E68A /* AlamofireImage.framework */; };
 		578605831EAD8F58004EF6F8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 578605821EAD8F58004EF6F8 /* .swiftlint.yml */; };
@@ -26,18 +26,18 @@
 		578605971EAD9134004EF6F8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605961EAD9134004EF6F8 /* API.swift */; };
 		578605991EAD918A004EF6F8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 578605981EAD918A004EF6F8 /* Cartfile */; };
 		5786059B1EAD9384004EF6F8 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5786059A1EAD9384004EF6F8 /* Alamofire.framework */; };
-		578605A21EAD974E004EF6F8 /* AppEntryDataProviderSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605A11EAD974E004EF6F8 /* AppEntryDataProviderSource.swift */; };
+		578605A21EAD974E004EF6F8 /* AppEntryListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605A11EAD974E004EF6F8 /* AppEntryListDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57194BEE1EAD8E9B00BE9836 /* App Store.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App Store.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57194BF11EAD8E9B00BE9836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57194BF31EAD8E9B00BE9836 /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
+		57194BF31EAD8E9B00BE9836 /* AppEntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryListViewController.swift; sourceTree = "<group>"; };
 		57194BF61EAD8E9B00BE9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57194BF81EAD8E9B00BE9836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57194BFB1EAD8E9B00BE9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57194BFD1EAD8E9B00BE9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		577871681EAD97F80075E68A /* AppEntryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntryCell.swift; sourceTree = "<group>"; };
+		577871681EAD97F80075E68A /* AppEntryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntryListCell.swift; sourceTree = "<group>"; };
 		5778716A1EAD98170075E68A /* Feed+DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Feed+DataProvider.swift"; sourceTree = "<group>"; };
 		5778716C1EAD9B240075E68A /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		578605821EAD8F58004EF6F8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
@@ -51,7 +51,7 @@
 		578605961EAD9134004EF6F8 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		578605981EAD918A004EF6F8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		5786059A1EAD9384004EF6F8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		578605A11EAD974E004EF6F8 /* AppEntryDataProviderSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntryDataProviderSource.swift; sourceTree = "<group>"; };
+		578605A11EAD974E004EF6F8 /* AppEntryListDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntryListDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +107,15 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
+		577871711EADCA520075E68A /* Mapper Extension */ = {
+			isa = PBXGroup;
+			children = (
+				578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */,
+				578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */,
+			);
+			name = "Mapper Extension";
+			sourceTree = "<group>";
+		};
 		5786057E1EAD8EB7004EF6F8 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,9 +146,8 @@
 		578605841EAD8FB0004EF6F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				577871711EADCA520075E68A /* Mapper Extension */,
 				578605851EAD8FBE004EF6F8 /* Author.swift */,
-				578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */,
-				578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */,
 				578605881EAD8FBE004EF6F8 /* Entry.swift */,
 				578605891EAD8FBE004EF6F8 /* Feed.swift */,
 				5786058A1EAD8FBE004EF6F8 /* Object.swift */,
@@ -170,9 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				5778716A1EAD98170075E68A /* Feed+DataProvider.swift */,
-				578605A11EAD974E004EF6F8 /* AppEntryDataProviderSource.swift */,
-				577871681EAD97F80075E68A /* AppEntryCell.swift */,
-				57194BF31EAD8E9B00BE9836 /* AppListViewController.swift */,
+				578605A11EAD974E004EF6F8 /* AppEntryListDataProvider.swift */,
+				577871681EAD97F80075E68A /* AppEntryListCell.swift */,
+				57194BF31EAD8E9B00BE9836 /* AppEntryListViewController.swift */,
 			);
 			name = "App List";
 			sourceTree = "<group>";
@@ -287,14 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578605A21EAD974E004EF6F8 /* AppEntryDataProviderSource.swift in Sources */,
+				578605A21EAD974E004EF6F8 /* AppEntryListDataProvider.swift in Sources */,
 				5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */,
 				5786058B1EAD8FBE004EF6F8 /* Author.swift in Sources */,
 				5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */,
 				5786058F1EAD8FBE004EF6F8 /* Feed.swift in Sources */,
-				57194BF41EAD8E9B00BE9836 /* AppListViewController.swift in Sources */,
+				57194BF41EAD8E9B00BE9836 /* AppEntryListViewController.swift in Sources */,
 				5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */,
-				577871691EAD97F80075E68A /* AppEntryCell.swift in Sources */,
+				577871691EAD97F80075E68A /* AppEntryListCell.swift in Sources */,
 				578605901EAD8FBE004EF6F8 /* Object.swift in Sources */,
 				578605971EAD9134004EF6F8 /* API.swift in Sources */,
 				5778716B1EAD98170075E68A /* Feed+DataProvider.swift in Sources */,

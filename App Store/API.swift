@@ -15,9 +15,10 @@ typealias ClosureType<Type> = (Type) -> Swift.Void
 struct API {
     func requestTopFreeApps(completion: @escaping ClosureType<Feed>) {
         Alamofire.request("https://itunes.apple.com/kr/rss/topfreeapplications/limit=50/genre=6015/json")
+            .validate(statusCode: 200..<300)
             .responseJSON { response in
-                guard let resultValue = response.result.value else { return }
-                guard let feed = Feed.from(resultValue as! NSDictionary) else { return }
+                guard let resultValue = response.result.value,
+                    let resultDictionary = resultValue as? NSDictionary, let feed = Feed.from(resultDictionary) else { return }
                 
                 completion(feed)
         }

@@ -8,19 +8,29 @@
 
 import Foundation
 
-extension Feed: AppEntryDataProviderSource {
+extension Feed: AppEntryListDataProviderSource {
     var numberOfRows: Int {
         return entry.count
     }
     
-    func appEntry(at index: Int) -> Entry? {
+    private func appEntry(at index: Int) -> Entry? {
         return entry[index]
     }
     
-    // MARK: - Ranking은 1에서부터 시작.
-    func ranking(of appEntry: Entry?) -> Int {
-        guard let appEntry = appEntry else { return 0 }
-
-        return (entry.index { appEntry.id.label == $0.id.label } ?? 0) + 1
+    func title(at index: Int) -> String {
+        guard let AppEntryList = appEntry(at: index) else { return "" }
+        
+        return AppEntryList.title
+    }
+    
+    func iconURL(at index: Int) -> URL? {
+        guard let AppEntryList = appEntry(at: index) else { return nil }
+        
+        var iconURL: URL? = nil
+        if let image = AppEntryList.image.last, let urlString = image.label {
+            iconURL = URL(string: urlString)
+        }
+        
+        return iconURL
     }
 }

@@ -54,14 +54,54 @@
 		57194BF01EAD8E9B00BE9836 /* App Store */ = {
 			isa = PBXGroup;
 			children = (
-				57194BF11EAD8E9B00BE9836 /* AppDelegate.swift */,
-				57194BF31EAD8E9B00BE9836 /* ViewController.swift */,
-				57194BF51EAD8E9B00BE9836 /* Main.storyboard */,
-				57194BF81EAD8E9B00BE9836 /* Assets.xcassets */,
-				57194BFA1EAD8E9B00BE9836 /* LaunchScreen.storyboard */,
-				57194BFD1EAD8E9B00BE9836 /* Info.plist */,
+				57194C031EAD8EA100BE9836 /* App Delegate */,
+				5786057D1EAD8EB4004EF6F8 /* View Controllers */,
+				578605801EAD8EBF004EF6F8 /* Storyboards */,
+				5786057F1EAD8EB9004EF6F8 /* Resource */,
+				5786057E1EAD8EB7004EF6F8 /* Support Files */,
 			);
 			path = "App Store";
+			sourceTree = "<group>";
+		};
+		57194C031EAD8EA100BE9836 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				57194BF11EAD8E9B00BE9836 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		5786057D1EAD8EB4004EF6F8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57194BF31EAD8E9B00BE9836 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5786057E1EAD8EB7004EF6F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57194BFD1EAD8E9B00BE9836 /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		5786057F1EAD8EB9004EF6F8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				57194BF81EAD8E9B00BE9836 /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		578605801EAD8EBF004EF6F8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				57194BF51EAD8E9B00BE9836 /* Main.storyboard */,
+				57194BFA1EAD8E9B00BE9836 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +339,7 @@
 				57194C021EAD8E9B00BE9836 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

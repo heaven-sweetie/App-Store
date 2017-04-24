@@ -28,8 +28,8 @@ extension Entry: AppDetailDataProviderSource {
         return "\(detail?.averageUserRatingForCurrentVersion ?? 0.0)"
     }
     
-    var screenshotURL: URL? {
-        return detail?.screenshotUrls.first
+    var screenshotURLs: [URL]? {
+        return detail?.screenshotUrls
     }
     
     var description: String {

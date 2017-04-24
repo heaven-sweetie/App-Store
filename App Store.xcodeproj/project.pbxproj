@@ -35,6 +35,7 @@
 		57DB2F641EADE27F00C9F3C6 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB2F631EADE27F00C9F3C6 /* Identifiable.swift */; };
 		57DB2F671EADE3C600C9F3C6 /* Entry+DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB2F661EADE3C600C9F3C6 /* Entry+DataProvider.swift */; };
 		57DB2F691EAE1D8400C9F3C6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB2F681EAE1D8400C9F3C6 /* Feed.swift */; };
+		57DB2F6C1EAE28A200C9F3C6 /* ScreenshotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DB2F6B1EAE28A200C9F3C6 /* ScreenshotCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		57DB2F631EADE27F00C9F3C6 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
 		57DB2F661EADE3C600C9F3C6 /* Entry+DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Entry+DataProvider.swift"; sourceTree = "<group>"; };
 		57DB2F681EAE1D8400C9F3C6 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		57DB2F6B1EAE28A200C9F3C6 /* ScreenshotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +130,9 @@
 		5778716E1EADC0E30075E68A /* App Detail */ = {
 			isa = PBXGroup;
 			children = (
-				57DB2F661EADE3C600C9F3C6 /* Entry+DataProvider.swift */,
+				57DB2F6A1EAE289900C9F3C6 /* Screenshot Collection */,
 				57DB2F621EADE20600C9F3C6 /* Cell */,
+				57DB2F661EADE3C600C9F3C6 /* Entry+DataProvider.swift */,
 				5787A2791EADDA960012645A /* AppDetailDataProvider.swift */,
 				5787A2781EADDA960012645A /* AppDetailViewController.swift */,
 			);
@@ -231,6 +234,14 @@
 				57DB2F631EADE27F00C9F3C6 /* Identifiable.swift */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		57DB2F6A1EAE289900C9F3C6 /* Screenshot Collection */ = {
+			isa = PBXGroup;
+			children = (
+				57DB2F6B1EAE28A200C9F3C6 /* ScreenshotCell.swift */,
+			);
+			name = "Screenshot Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +374,7 @@
 				577871701EADC90F0075E68A /* AppDetail.swift in Sources */,
 				57194BF21EAD8E9B00BE9836 /* AppDelegate.swift in Sources */,
 				57DB2F641EADE27F00C9F3C6 /* Identifiable.swift in Sources */,
+				57DB2F6C1EAE28A200C9F3C6 /* ScreenshotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

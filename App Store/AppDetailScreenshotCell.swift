@@ -10,15 +10,36 @@ import UIKit
 import AlamofireImage
 
 struct AppDetailScreenshotCellData {
-    var screenshotURL: URL?
+    var screenshotURLs: [URL]?
 }
 
 class AppDetailScreenshotCell: UITableViewCell, Identifiable {
     @IBOutlet weak var screenshotView: UIImageView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var imageURLs: [URL]?
     
     func configure(by cellData: AppDetailScreenshotCellData) {
-        if let screenshotURL = cellData.screenshotURL {
-            screenshotView.af_setImage(withURL: screenshotURL)
-        }
+        imageURLs = cellData.screenshotURLs
+        
+        collectionView.reloadData()
     }
+}
+
+extension AppDetailScreenshotCell: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return imageURLs?.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let imageURLs = imageURLs else { return UICollectionViewCell() }
+        
+        if let screenshotCell = collectionView.dequeueReusableCell(withReuseIdentifier: ScreenshotCell.identifier, for: indexPath) as? ScreenshotCell {
+            let url = imageURLs[indexPath.row]
+            screenshotCell.imageView.af_setImage(withURL: url)
+            return screenshotCell
+        }
+        
+        return UICollectionViewCell()
+    }    
 }

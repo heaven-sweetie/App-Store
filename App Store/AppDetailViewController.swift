@@ -58,7 +58,7 @@ extension AppDetailViewController: UITableViewDataSource {
             }
         case .screenshot:
             if let cell = tableView.dequeueReusableCell(withIdentifier: AppDetailScreenshotCell.identifier, for: indexPath) as? AppDetailScreenshotCell {
-                cell.configure(by: AppDetailScreenshotCellData(screenshotURL: appEntry.screenshotURL))
+                cell.configure(by: AppDetailScreenshotCellData(screenshotURLs: appEntry.screenshotURLs))
                 return cell
             }
         case .description:

@@ -29,7 +29,7 @@ protocol AppDetailDataProviderSource {
     var title: String { get }
     var rateText: String { get }
     
-    var screenshotURL: URL? { get }
+    var screenshotURLs: [URL]? { get }
     
     var description: String { get }
     

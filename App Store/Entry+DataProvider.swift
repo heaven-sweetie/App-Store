@@ -24,8 +24,8 @@ extension Entry: AppDetailDataProviderSource {
         return iconURL
     }
     
-    var rateText: String {
-        return "\(detail?.averageUserRatingForCurrentVersion ?? 0.0)"
+    var rate: Double {
+        return detail?.averageUserRating ?? 0.0
     }
     
     var screenshotURLs: [URL]? {

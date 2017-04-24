@@ -10,12 +10,12 @@ import Foundation
 import Mapper
 
 struct AppDetail: Mappable {
-    let averageUserRatingForCurrentVersion: Double
+    let averageUserRating: Double
     let description: String
     let screenshotUrls: [URL]
     
     init(map: Mapper) throws {
-        try averageUserRatingForCurrentVersion = map.from("averageUserRatingForCurrentVersion")
+        try averageUserRating = map.from("averageUserRating")
         try description = map.from("description")
         try screenshotUrls = map.from("screenshotUrls")
     }

@@ -53,7 +53,7 @@ extension AppDetailViewController: UITableViewDataSource {
         case .header:
             if let cell = tableView.dequeueReusableCell(withIdentifier: AppDetailHeaderCell.identifier, for: indexPath) as? AppDetailHeaderCell {
                 cell.configure(by: AppDetailHeaderCellData(iconURL: appEntry.iconURL,
-                                                           title: appEntry.title, rate: appEntry.rateText))
+                                                           title: appEntry.title, rate: appEntry.rate))
                 return cell
             }
         case .screenshot:

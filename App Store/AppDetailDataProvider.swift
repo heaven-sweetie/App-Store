@@ -27,7 +27,7 @@ protocol AppDetailDataProviderSource {
     
     var iconURL: URL? { get }
     var title: String { get }
-    var rateText: String { get }
+    var rate: Double { get }
     
     var screenshotURLs: [URL]? { get }
     

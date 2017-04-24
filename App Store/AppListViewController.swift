@@ -9,8 +9,22 @@
 import UIKit
 
 class AppListViewController: UIViewController {
-    
     @IBOutlet weak var tableView: UITableView!
     
+    let api = API()
+    var dataProvider: AppEntryDataProvider!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureDataProvider()
+        api.requestTopFreeApps { self.dataProvider.feed = $0 }
+    }
+    
+    func configureDataProvider() {
+        dataProvider = AppEntryDataProvider()
+        dataProvider.tableView = tableView
+        
+        tableView.dataSource = dataProvider
+    }
 }

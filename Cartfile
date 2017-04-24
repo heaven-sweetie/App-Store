@@ -1,1 +1,3 @@
 github "lyft/mapper"
+github "Alamofire/Alamofire" ~> 4.4
+github "Alamofire/AlamofireImage" ~> 3.1

@@ -20,16 +20,3 @@ struct AppDetail: Mappable {
         try screenshotUrls = map.from("screenshotUrls")
     }
 }
-
-func transform(_ value: Any) throws -> Date {
-    guard let stringValue = value as? String else {
-        throw MapperError.convertibleError(value: value, type: Date.self)
-    }
-    
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
-    guard let date = dateFormatter.date(from: stringValue) else {
-        throw MapperError.convertibleError(value: value, type: Date.self)
-    }
-    return date
-}

@@ -42,12 +42,13 @@ class AppEntryListDataProvider: NSObject, UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let feed = feed,
-            let cell = tableView.dequeueReusableCell(withIdentifier: AppEntryListCell.identifier, for: indexPath) as? AppEntryListCell
-            else { return AppEntryListCell() }
+            let cell = tableView.dequeueReusableCell(withIdentifier: AppEntryListCell.identifier, for: indexPath) as? AppEntryListCell else {
+                return AppEntryListCell()
+        }
         
         // MARK: - Ranking은 1에서부터 시작.
-        cell.configure(by: AppEntryListCellData(ranking: (indexPath.row + 1),
-                                                iconURL: feed.iconURL(at: indexPath.row), title: feed.title(at: indexPath.row)))
+        cell.cellData = AppEntryListCellData(ranking: (indexPath.row + 1),
+                                             iconURL: feed.iconURL(at: indexPath.row), title: feed.title(at: indexPath.row))
         
         return cell
     }

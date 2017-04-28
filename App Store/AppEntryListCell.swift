@@ -20,7 +20,15 @@ class AppEntryListCell: UITableViewCell, Identifiable {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     
-    func configure(by cellData: AppEntryListCellData) {
+    var cellData: AppEntryListCellData? = nil {
+        didSet {
+            configure(by: cellData)
+        }
+    }
+    
+    private func configure(by cellData: AppEntryListCellData?) {
+        guard let cellData = cellData else { return }
+        
         rankingLabel.text = "\(cellData.ranking)"
         if let iconURL = cellData.iconURL {
             iconImageView.af_setImage(withURL: iconURL)

@@ -18,19 +18,12 @@ extension Feed: AppEntryListDataProviderSource {
     }
     
     func title(at index: Int) -> String {
-        guard let AppEntryList = appEntry(at: index) else { return "" }
-        
-        return AppEntryList.title
+        return appEntry(at: index)?.title ?? ""
     }
     
     func iconURL(at index: Int) -> URL? {
-        guard let AppEntryList = appEntry(at: index) else { return nil }
+        guard let iconURLString = appEntry(at: index)?.image.last?.label else { return nil }
         
-        var iconURL: URL? = nil
-        if let image = AppEntryList.image.last, let urlString = image.label {
-            iconURL = URL(string: urlString)
-        }
-        
-        return iconURL
+        return URL(string: iconURLString)
     }
 }

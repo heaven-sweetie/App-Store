@@ -12,7 +12,7 @@ class AppEntryListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let api = API()
-    var dataProvider: AppEntryListDataProvider!
+    lazy var dataProvider = AppEntryListDataProvider()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,6 @@ class AppEntryListViewController: UIViewController {
     }
     
     func configureDataProvider() {
-        dataProvider = AppEntryListDataProvider()
         dataProvider.tableView = tableView
         
         tableView.dataSource = dataProvider

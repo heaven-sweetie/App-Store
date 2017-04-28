@@ -21,7 +21,6 @@
 		5778716D1EAD9B240075E68A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5778716C1EAD9B240075E68A /* AlamofireImage.framework */; };
 		577871701EADC90F0075E68A /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778716F1EADC90F0075E68A /* AppDetail.swift */; };
 		578605831EAD8F58004EF6F8 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 578605821EAD8F58004EF6F8 /* .swiftlint.yml */; };
-		5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */; };
 		5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */; };
 		5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605881EAD8FBE004EF6F8 /* Entry.swift */; };
 		578605931EAD9068004EF6F8 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578605921EAD9068004EF6F8 /* Mapper.framework */; };
@@ -57,7 +56,6 @@
 		5778716C1EAD9B240075E68A /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
 		5778716F1EADC90F0075E68A /* AppDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetail.swift; sourceTree = "<group>"; };
 		578605821EAD8F58004EF6F8 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
-		578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Mapper.swift"; sourceTree = "<group>"; };
 		578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Mapper.swift"; sourceTree = "<group>"; };
 		578605881EAD8FBE004EF6F8 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		578605921EAD9068004EF6F8 /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = SOURCE_ROOT; };
@@ -146,7 +144,6 @@
 		577871711EADCA520075E68A /* Mapper Extension */ = {
 			isa = PBXGroup;
 			children = (
-				578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */,
 				578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */,
 			);
 			name = "Mapper Extension";
@@ -369,7 +366,6 @@
 				5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */,
 				57DB2F5F1EADE13B00C9F3C6 /* AppDetailScreenshotCell.swift in Sources */,
 				57194BF41EAD8E9B00BE9836 /* AppEntryListViewController.swift in Sources */,
-				5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */,
 				5787A27B1EADDA960012645A /* AppDetailDataProvider.swift in Sources */,
 				572C2FD51EB318D8006EDD39 /* Object.swift in Sources */,
 				577871691EAD97F80075E68A /* AppEntryListCell.swift in Sources */,

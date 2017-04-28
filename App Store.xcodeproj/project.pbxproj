@@ -12,6 +12,10 @@
 		57194BF71EAD8E9B00BE9836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57194BF51EAD8E9B00BE9836 /* Main.storyboard */; };
 		57194BF91EAD8E9B00BE9836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57194BF81EAD8E9B00BE9836 /* Assets.xcassets */; };
 		57194BFC1EAD8E9B00BE9836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57194BFA1EAD8E9B00BE9836 /* LaunchScreen.storyboard */; };
+		572C2FD51EB318D8006EDD39 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C2FD41EB318D8006EDD39 /* Object.swift */; };
+		572C2FD71EB318F8006EDD39 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C2FD61EB318F8006EDD39 /* Constant.swift */; };
+		572C2FD91EB32D9D006EDD39 /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C2FD81EB32D9D006EDD39 /* URI.swift */; };
+		572C2FDB1EB3838D006EDD39 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572C2FDA1EB3838D006EDD39 /* Result.swift */; };
 		577871691EAD97F80075E68A /* AppEntryListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577871681EAD97F80075E68A /* AppEntryListCell.swift */; };
 		5778716B1EAD98170075E68A /* Feed+DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5778716A1EAD98170075E68A /* Feed+DataProvider.swift */; };
 		5778716D1EAD9B240075E68A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5778716C1EAD9B240075E68A /* AlamofireImage.framework */; };
@@ -20,7 +24,6 @@
 		5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */; };
 		5786058D1EAD8FBE004EF6F8 /* Dictionary+Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */; };
 		5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605881EAD8FBE004EF6F8 /* Entry.swift */; };
-		578605901EAD8FBE004EF6F8 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786058A1EAD8FBE004EF6F8 /* Object.swift */; };
 		578605931EAD9068004EF6F8 /* Mapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578605921EAD9068004EF6F8 /* Mapper.framework */; };
 		578605971EAD9134004EF6F8 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578605961EAD9134004EF6F8 /* API.swift */; };
 		578605991EAD918A004EF6F8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 578605981EAD918A004EF6F8 /* Cartfile */; };
@@ -45,6 +48,10 @@
 		57194BF81EAD8E9B00BE9836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57194BFB1EAD8E9B00BE9836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57194BFD1EAD8E9B00BE9836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		572C2FD41EB318D8006EDD39 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		572C2FD61EB318F8006EDD39 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		572C2FD81EB32D9D006EDD39 /* URI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
+		572C2FDA1EB3838D006EDD39 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		577871681EAD97F80075E68A /* AppEntryListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEntryListCell.swift; sourceTree = "<group>"; };
 		5778716A1EAD98170075E68A /* Feed+DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Feed+DataProvider.swift"; sourceTree = "<group>"; };
 		5778716C1EAD9B240075E68A /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = SOURCE_ROOT; };
@@ -53,7 +60,6 @@
 		578605861EAD8FBE004EF6F8 /* Date+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Mapper.swift"; sourceTree = "<group>"; };
 		578605871EAD8FBE004EF6F8 /* Dictionary+Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Mapper.swift"; sourceTree = "<group>"; };
 		578605881EAD8FBE004EF6F8 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
-		5786058A1EAD8FBE004EF6F8 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		578605921EAD9068004EF6F8 /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = Carthage/Build/iOS/Mapper.framework; sourceTree = SOURCE_ROOT; };
 		578605961EAD9134004EF6F8 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		578605981EAD918A004EF6F8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
@@ -152,6 +158,7 @@
 				578605981EAD918A004EF6F8 /* Cartfile */,
 				578605821EAD8F58004EF6F8 /* .swiftlint.yml */,
 				57194BFD1EAD8E9B00BE9836 /* Info.plist */,
+				572C2FD61EB318F8006EDD39 /* Constant.swift */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -177,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				577871711EADCA520075E68A /* Mapper Extension */,
+				572C2FD41EB318D8006EDD39 /* Object.swift */,
 				578605881EAD8FBE004EF6F8 /* Entry.swift */,
 				57DB2F681EAE1D8400C9F3C6 /* Feed.swift */,
-				5786058A1EAD8FBE004EF6F8 /* Object.swift */,
 				5778716F1EADC90F0075E68A /* AppDetail.swift */,
 			);
 			name = Model;
@@ -199,6 +206,8 @@
 		578605951EAD912C004EF6F8 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				572C2FD81EB32D9D006EDD39 /* URI.swift */,
+				572C2FDA1EB3838D006EDD39 /* Result.swift */,
 				578605961EAD9134004EF6F8 /* API.swift */,
 			);
 			name = API;
@@ -353,6 +362,7 @@
 			files = (
 				578605A21EAD974E004EF6F8 /* AppEntryListDataProvider.swift in Sources */,
 				57DB2F691EAE1D8400C9F3C6 /* Feed.swift in Sources */,
+				572C2FD71EB318F8006EDD39 /* Constant.swift in Sources */,
 				57DB2F671EADE3C600C9F3C6 /* Entry+DataProvider.swift in Sources */,
 				57DB2F5D1EADE12600C9F3C6 /* AppDetailDescriptionCell.swift in Sources */,
 				5786058E1EAD8FBE004EF6F8 /* Entry.swift in Sources */,
@@ -361,15 +371,17 @@
 				57194BF41EAD8E9B00BE9836 /* AppEntryListViewController.swift in Sources */,
 				5786058C1EAD8FBE004EF6F8 /* Date+Mapper.swift in Sources */,
 				5787A27B1EADDA960012645A /* AppDetailDataProvider.swift in Sources */,
+				572C2FD51EB318D8006EDD39 /* Object.swift in Sources */,
 				577871691EAD97F80075E68A /* AppEntryListCell.swift in Sources */,
+				572C2FDB1EB3838D006EDD39 /* Result.swift in Sources */,
 				57DB2F611EADE14E00C9F3C6 /* AppDetailHeaderCell.swift in Sources */,
-				578605901EAD8FBE004EF6F8 /* Object.swift in Sources */,
 				578605971EAD9134004EF6F8 /* API.swift in Sources */,
 				5778716B1EAD98170075E68A /* Feed+DataProvider.swift in Sources */,
 				5787A27A1EADDA960012645A /* AppDetailViewController.swift in Sources */,
 				577871701EADC90F0075E68A /* AppDetail.swift in Sources */,
 				57194BF21EAD8E9B00BE9836 /* AppDelegate.swift in Sources */,
 				57DB2F641EADE27F00C9F3C6 /* Identifiable.swift in Sources */,
+				572C2FD91EB32D9D006EDD39 /* URI.swift in Sources */,
 				57DB2F6C1EAE28A200C9F3C6 /* ScreenshotCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

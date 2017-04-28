@@ -30,7 +30,15 @@ class AppEntryListViewController: UIViewController {
     }
     
     func loadFeed() {
-        api.requestTopFreeApps { self.dataProvider.feed = $0 }
+        api.requestTopFreeApps { result in
+            switch result {
+            case .success(let value):
+                self.dataProvider.feed = value
+            case .failure(let error):
+                debugPrint("Error: \(error)")
+            }
+            
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

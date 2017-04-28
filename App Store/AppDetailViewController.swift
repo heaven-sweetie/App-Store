@@ -20,11 +20,16 @@ class AppDetailViewController: UIViewController {
             return
         }
         
-        api.requestAppDetail(by: appID) { [weak self] appDetail in
+        api.requestAppDetail(by: appID) { [weak self] result in
             guard let strongSelf = self else { return }
             
-            strongSelf.appEntry.detail = appDetail
-            strongSelf.tableView.reloadData()
+            switch result {
+            case .success(let appDetail):
+                strongSelf.appEntry.detail = appDetail
+                strongSelf.tableView.reloadData()
+            case .failure(let error):
+                debugPrint("Error: \(error)")
+            }
         }
     }
     

@@ -15,8 +15,8 @@ struct AppDetail: Mappable {
     let screenshotUrls: [URL]
     
     init(map: Mapper) throws {
-        try averageUserRating = map.from("averageUserRating")
-        try description = map.from("description")
-        try screenshotUrls = map.from("screenshotUrls")
+        try averageUserRating = map.from(Constant.averageUserRating)
+        try description = map.from(Constant.description)
+        try screenshotUrls = map.from(Constant.screenshotUrls)
     }
 }

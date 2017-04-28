@@ -14,7 +14,8 @@ struct Object: Mappable {
     let attributes: [String: Any]
     
     init(map: Mapper) throws {
-        label = map.optionalFrom("label")
-        try attributes = map.from("attributes")
+        label = map.optionalFrom(Constant.label)
+        
+        try attributes = map.from(Constant.attributes)
     }
 }

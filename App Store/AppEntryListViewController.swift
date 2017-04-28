@@ -42,9 +42,10 @@ class AppEntryListViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.identifier == "AppDetailSegue",
-            let detailViewController = segue.destination as? AppDetailViewController,
-            let selectedAppEntry = dataProvider.selectedAppEntry else { return }
+        guard segue.identifier == Constant.appDetailSegue,
+            let detailViewController = segue.destination as? AppDetailViewController, let selectedAppEntry = dataProvider.selectedAppEntry else {
+                return
+        }
         
         detailViewController.appEntry = selectedAppEntry
     }

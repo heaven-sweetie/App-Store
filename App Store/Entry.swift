@@ -18,9 +18,9 @@ struct Entry: Mappable {
     var detail: AppDetail?
     
     init(map: Mapper) throws {
-        try name = map.from("im:name.label")
-        try image = map.from("im:image")
-        try title = map.from("title.label")
-        try id = map.from("id")
+        try name = map.from(Constant.path([Constant.name, Constant.label]))
+        try image = map.from(Constant.image)
+        try title = map.from(Constant.path([Constant.title, Constant.label]))
+        try id = map.from(Constant.id)
     }
 }

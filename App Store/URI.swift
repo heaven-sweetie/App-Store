@@ -32,7 +32,7 @@ struct URI: URLConvertible {
 
 extension Dictionary {
     func toString(by valueSeparator: String = "=", listSeparator: String? = nil) -> String {
-        let stringList = map { "\($0)\(valueSeparator)\($1)" }
+        let stringList = map { "\($0.key)\(valueSeparator)\($0.value)" }
         
         guard let listSeparator = listSeparator else { return stringList.first ?? "" }
         

@@ -31,16 +31,13 @@ class AppDetailHeaderCell: UITableViewCell, Identifiable {
     }
     
     func configureRatingStarView(by rate: Double) {
-        let number = floor(rate)
-        let remain = rate - number
+        let integer = Int(floor(rate))
+        let remain = rate - floor(rate)
         
-        for index in 0..<Int(number) {
-            let ratingStarView = ratingStarViews[index]
-            ratingStarView.image = #imageLiteral(resourceName: "fullStar")
-        }
-        if remain > 0.0 {
-            let ratingStarView = ratingStarViews[Int(ceil(number))]
-            ratingStarView.image = #imageLiteral(resourceName: "halfStar")
-        }
+        [0..<integer]
+            .flatMap { ratingStarViews[$0] }
+            .forEach { $0.image = #imageLiteral(resourceName: "fullStar") }
+        
+        ratingStarViews[integer].image = remain > 0.0 ? #imageLiteral(resourceName: "halfStar") : #imageLiteral(resourceName: "emptyStar")
     }
 }

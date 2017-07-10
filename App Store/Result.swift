@@ -20,4 +20,3 @@ enum Result<Type> {
         self = .failure(error)
     }
 }
-

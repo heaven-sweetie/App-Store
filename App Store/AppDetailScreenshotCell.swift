@@ -32,14 +32,14 @@ extension AppDetailScreenshotCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let imageURLs = imageURLs else { return UICollectionViewCell() }
-        
-        if let screenshotCell = collectionView.dequeueReusableCell(withReuseIdentifier: ScreenshotCell.identifier, for: indexPath) as? ScreenshotCell {
-            let url = imageURLs[indexPath.row]
-            screenshotCell.imageView.af_setImage(withURL: url)
-            return screenshotCell
+        guard let imageURLs = imageURLs,
+            let screenshotCell = collectionView.dequeueReusableCell(withReuseIdentifier: ScreenshotCell.identifier, for: indexPath) as? ScreenshotCell
+            else {
+                return UICollectionViewCell()
         }
         
-        return UICollectionViewCell()
-    }    
+        screenshotCell.imageView.af_setImage(withURL: imageURLs[indexPath.row])
+        
+        return screenshotCell
+    }
 }

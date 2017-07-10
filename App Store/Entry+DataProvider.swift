@@ -10,18 +10,13 @@ import Foundation
 
 extension Entry: AppDetailDataProviderSource {
     var appId: String? {
-        guard let appId = id.attributes["im:id"] as? String else { return nil }
-        
-        return appId
+        return id.attributes["im:id"] as? String ?? nil
     }
     
     var iconURL: URL? {
-        var iconURL: URL? = nil
-        if let image = image.last, let urlString = image.label {
-            iconURL = URL(string: urlString)
-        }
+        guard let urlString = image.last?.label else { return nil }
         
-        return iconURL
+        return URL(string: urlString)
     }
     
     var rate: Double {

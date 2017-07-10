@@ -30,8 +30,4 @@ extension Entry: AppDetailDataProviderSource {
     var description: String {
         return detail?.description ?? ""
     }
-    
-    var isLoaded: Bool {
-        return detail != nil
-    }
 }

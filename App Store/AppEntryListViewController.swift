@@ -46,6 +46,6 @@ class AppEntryListViewController: UIViewController {
                 return
         }
         
-        detailViewController.appEntry = selectedAppEntry
+        detailViewController.dataProvider = AppDetailDataProvider(source: selectedAppEntry)
     }
 }
